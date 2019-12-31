@@ -1,0 +1,23 @@
+<h2>Contact</h2>
+<p>
+    You can contact us via email, but first answer a few questions so that we can help you setting up this email.
+</p>
+
+<form [formGroup]="userForm">
+    <mat-form-field>
+        <mat-label>Where do you want to talk about</mat-label>
+        <mat-select matNativeControl required formControlName="subject">
+            <mat-option value="I have a great idea">I have a great idea</mat-option>
+            <mat-option value="I would like to join the team">I would like to join the team</mat-option>
+            <mat-option value="I have a question">I have a question</mat-option>
+            <mat-option value="I have found a bug/error in one of the games">I have found a bug/error in one of the
+                games</mat-option>
+            <mat-option value="Other question/request">Other question/request</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput placeholder="Explain in detail" formControlName="content"></textarea>
+    </mat-form-field>
+    <button mat-raised-button><a href="{{GetEmailString()}}">Create
+            email</a></button>
+</form>
