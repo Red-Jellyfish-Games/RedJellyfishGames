@@ -12,6 +12,9 @@ import { AboutComponent } from './Components/about/about.component';
 import { NewsComponent } from './Components/news/news.component';
 import { FlexModule } from '@angular/flex-layout';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MenuComponent } from './Components/menu/menu.component';
+import { I18nModule } from './Modules/i18n/i18n.module';
+import { SelectLanguageComponent } from './Components/select-language/select-language.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ContactComponent,
     GamesComponent,
     AboutComponent,
-    NewsComponent
+    NewsComponent,
+    MenuComponent,
+    SelectLanguageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FlexModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    I18nModule
   ],
   providers: [],
   bootstrap: [AppComponent]

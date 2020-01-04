@@ -15,10 +15,7 @@
 <div id="mainContainer" fxLayout="column" *ngIf="!menuOpen">
   <mat-toolbar fxFlex="56px" *ngIf="!mobileDevice">
     <span fxFlex></span>
-    <a [routerLink]="['/news/']">News</a>
-    <a [routerLink]="['/games/']">Games</a>
-    <a [routerLink]="['/about/']">About</a>
-    <a [routerLink]="['/contact/']">Contact</a>
+    <app-menu></app-menu>
   </mat-toolbar>
   <mat-toolbar id="menuButton" *ngIf="mobileDevice" fxFlex="56px">
     <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="openMenuOverlay(true)">
@@ -36,5 +33,7 @@
   </div>
   <footer fxFlex="25px" fxLayoutAlign="center center">
     Copyright &copy; Semicolon Games 2019 - {{getYear()}}
+    <span fxFlex></span>
+    <app-select-language></app-select-language>
   </footer>
 </div>

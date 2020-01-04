@@ -19,7 +19,6 @@ export class AppComponent {
 
   constructor() {
     this.mobileDevice = window.innerWidth <= 845;
-
   }
 
   @HostListener('window:scroll')
