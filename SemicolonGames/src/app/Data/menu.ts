@@ -7,25 +7,27 @@ export const ModulesList = [{
     routerLink: '/games/',
     children: [{
         label: 'Ice Runners',
-        routerLink: '/games/',
+        routerLink: '/games/'
     }]
 }, {
     label: 'menuAbout',
     routerLink: '/about/',
-    children: [{
+    children: [/*{
         label: 'menuTeam',
         routerLink: '/about/',
         children: [
             {
                 label: 'menuProgrammers',
-                routerLink: '/about/'
+                routerLink: '/about/',
+                fragment: 'programmers'
             },
             {
                 label: 'menuArtists',
-                routerLink: '/about/'
+                routerLink: '/about/',
+                fragment: 'artists'
             }
         ]
-    }
+    }*/
     ]
 }, {
     label: 'menuContact',

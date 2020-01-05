@@ -1,28 +1,16 @@
-<div id="mobileMenuContainer" *ngIf="menuOpen" fxLayout="column" fxLayoutAlign="center" fxFill>
-  <button mat-icon-button color="primary" aria-label="Sluiten" (click)="openMenuOverlay(false)" fxFlex="40px">
-    <mat-icon>close</mat-icon>
-  </button>
-  <span fxFlex></span>
-  <a [routerLink]="['/news/']" (click)="openMenuOverlay(false)">News</a>
-  <mat-divider></mat-divider>
-  <a [routerLink]="['/games/']" (click)="openMenuOverlay(false)">Games</a>
-  <mat-divider></mat-divider>
-  <a [routerLink]="['/about/']" (click)="openMenuOverlay(false)">About</a>
-  <mat-divider></mat-divider>
-  <a [routerLink]="['/contact/']" (click)="openMenuOverlay(false)">Contact</a>
-  <span fxFlex></span>
-</div>
+<app-mobile-menu *ngIf="menuOpen"></app-mobile-menu>
 <div id="mainContainer" fxLayout="column" *ngIf="!menuOpen">
   <mat-toolbar fxFlex="56px" *ngIf="!mobileDevice">
+    <a [routerLink]="['/news/']">{{'companyName' | translate}}</a>
     <span fxFlex></span>
     <app-menu></app-menu>
   </mat-toolbar>
   <mat-toolbar id="menuButton" *ngIf="mobileDevice" fxFlex="56px">
-    <button mat-icon-button aria-label="Example icon-button with a heart icon" (click)="openMenuOverlay(true)">
+    <button mat-icon-button (click)="openMenuOverlay(true)">
       <mat-icon>menu</mat-icon>
     </button>
     <span fxFlex></span>
-    <a [routerLink]="['/news/']">Semicolon Games</a>
+    <a [routerLink]="['/news/']">{{'companyName' | translate}}</a>
   </mat-toolbar>
   <div id="contentContainer" fxFlex>
     <router-outlet></router-outlet>
@@ -31,8 +19,9 @@
       <mat-icon>arrow_drop_up</mat-icon>
     </button>
   </div>
-  <footer fxFlex="25px" fxLayoutAlign="center center">
-    Copyright &copy; Semicolon Games 2019 - {{getYear()}}
+  <footer fxLayoutAlign="column center">
+    <span fxFlex></span>
+    Copyright &copy; {{'companyName' | translate}} 2019 - {{getYear()}}
     <span fxFlex></span>
     <app-select-language></app-select-language>
   </footer>

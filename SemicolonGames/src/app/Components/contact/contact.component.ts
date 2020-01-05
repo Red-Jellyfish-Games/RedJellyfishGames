@@ -24,7 +24,7 @@ export class ContactComponent implements OnInit {
     var returnString = "mailto:semicolongames@gmail.com?";
     var subject = this.userForm.controls.subject.value;
     var content = this.userForm.controls.content.value;
-    console.log(this.userForm.controls.subject);
+
     if (subject) {
       returnString += "SUBJECT=" + subject;
     }

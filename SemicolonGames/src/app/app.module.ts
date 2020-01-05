@@ -15,6 +15,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MenuComponent } from './Components/menu/menu.component';
 import { I18nModule } from './Modules/i18n/i18n.module';
 import { SelectLanguageComponent } from './Components/select-language/select-language.component';
+import { MobileMenuComponent } from './Components/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SelectLanguageComponent } from './Components/select-language/select-lan
     AboutComponent,
     NewsComponent,
     MenuComponent,
-    SelectLanguageComponent
+    SelectLanguageComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,
