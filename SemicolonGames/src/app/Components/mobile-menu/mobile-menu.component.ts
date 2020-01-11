@@ -1,24 +1,33 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { ModulesList } from '../../Data/menu';
-import { EventEmitter } from 'events';
+import { CommunicationService } from '../../Services/communication.service';
+import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-menu',
   templateUrl: './mobile-menu.component.html',
   styleUrls: ['./mobile-menu.component.scss']
 })
-export class MobileMenuComponent implements OnInit {
+export class MobileMenuComponent {
 
   modulesList: Array<any>;
+  public open: boolean = false;
+  subscription: Subscription;
 
-  constructor() {
+  constructor(private communicationService: CommunicationService, private router: Router) {
     this.modulesList = ModulesList;
+    this.subscription = this.communicationService.mobileMenuStream$.subscribe(
+      open => {
+        this.open = open;
+      });
   }
 
-  ngOnInit() {
-  }
-
-  closeMenu() {
-
+  closeMenu(children: boolean, routerLink: string) {
+    if (children == false) {
+      this.router.navigate([routerLink]);
+      this.open = false;
+      this.communicationService.ChangeMobileMenu(false);
+    }
   }
 }

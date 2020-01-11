@@ -16,6 +16,7 @@ import { MenuComponent } from './Components/menu/menu.component';
 import { I18nModule } from './Modules/i18n/i18n.module';
 import { SelectLanguageComponent } from './Components/select-language/select-language.component';
 import { MobileMenuComponent } from './Components/mobile-menu/mobile-menu.component';
+import { CommunicationService } from './Services/communication.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { MobileMenuComponent } from './Components/mobile-menu/mobile-menu.compon
     ReactiveFormsModule,
     I18nModule
   ],
-  providers: [],
+  providers: [CommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

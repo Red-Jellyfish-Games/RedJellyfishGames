@@ -1,12 +1,13 @@
-<app-mobile-menu *ngIf="menuOpen"></app-mobile-menu>
-<div id="mainContainer" fxLayout="column" *ngIf="!menuOpen">
+<app-mobile-menu></app-mobile-menu>
+<div id="mainContainer" fxLayout="column" *ngIf="!mobileMenuOpen">
   <mat-toolbar fxFlex="56px" *ngIf="!mobileDevice">
     <a [routerLink]="['/news/']">{{'companyName' | translate}}</a>
     <span fxFlex></span>
     <app-menu></app-menu>
   </mat-toolbar>
+
   <mat-toolbar id="menuButton" *ngIf="mobileDevice" fxFlex="56px">
-    <button mat-icon-button (click)="openMenuOverlay(true)">
+    <button mat-icon-button (click)="openMobileMenu()">
       <mat-icon>menu</mat-icon>
     </button>
     <span fxFlex></span>

@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { CommunicationService } from './Services/communication.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +14,20 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
 
   mobileDevice: boolean;
-  menuOpen: boolean = false;
+  mobileMenuOpen: boolean = false;
 
   topPosToStartShowingButton = 100;
   showScrollToTopButton: boolean = false;
 
-  constructor() {
+  subscription: Subscription;
+
+  constructor(private communicationService: CommunicationService) {
+    this.subscription = this.communicationService.mobileMenuStream$.subscribe(
+      open => {
+        this.mobileMenuOpen = open;
+      }
+    );
+
     this.mobileDevice = window.innerWidth <= 845;
   }
 
@@ -30,6 +40,10 @@ export class AppComponent {
     } else {
       this.showScrollToTopButton = false;
     }
+  }
+
+  ngAfterViewInit() {
+
   }
 
   scrollToTop() {
@@ -48,7 +62,7 @@ export class AppComponent {
     this.mobileDevice = window.innerWidth <= 845;
   }
 
-  openMenuOverlay(open: boolean) {
-    this.menuOpen = open;
+  openMobileMenu() {
+    this.communicationService.ChangeMobileMenu(true);
   }
 }

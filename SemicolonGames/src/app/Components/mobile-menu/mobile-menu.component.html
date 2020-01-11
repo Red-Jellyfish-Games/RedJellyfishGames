@@ -1,35 +1,19 @@
-<mat-accordion id="mobileMenuContainer" fxLayout="column" fxLayoutAlign="center" fxFill>
+<mat-accordion id="mobileMenuContainer" fxLayout="column" fxLayoutAlign="center" *ngIf="open" fxFill>
     <ng-container *ngFor="let menuItem of modulesList">
 
-        <ng-container>
-            <mat-expansion-panel [hideToggle]="menuItem.children <= 0 || !menuItem.children">
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        {{menuItem.label | translate}}
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
+        <mat-expansion-panel [hideToggle]="menuItem.children <= 0 || !menuItem.children">
+            <mat-expansion-panel-header (click)="closeMenu(menuItem.children, menuItem.routerLink)">
+                <mat-panel-title>
+                    {{menuItem.label | translate}}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
 
-                <ng-container *ngFor="let child of menuItem.children">
-                    <button *ngIf="child.children <=0 || !child.children" mat-button routerLink='{{child.routerLink}}'
-                        [disableRipple]="true">{{child.label | translate}}</button>
+            <ng-container *ngFor="let child of menuItem.children">
+                <button *ngIf="child.children <=0 || !child.children" mat-button [disableRipple]="true"
+                    (click)="closeMenu(child.children, menuItem.routerLink)">{{child.label | translate}}</button>
+            </ng-container>
 
-                    <mat-expansion-panel [hideToggle]="true">
-                        <mat-expansion-panel-header>
-                            <mat-panel-title>
-                                {{child.label | translate}}
-                            </mat-panel-title>
-                        </mat-expansion-panel-header>
-
-
-                        <button *ngFor="let innerChild of child.children" mat-button
-                            routerLink='{{innerChild.routerLink}}'
-                            [disableRipple]="true">{{innerChild.label | translate}}</button>
-                    </mat-expansion-panel>
-                </ng-container>
-
-            </mat-expansion-panel>
-
-        </ng-container>
+        </mat-expansion-panel>
 
     </ng-container>
 </mat-accordion>
