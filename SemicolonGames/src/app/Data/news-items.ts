@@ -12,6 +12,6 @@ export const NewsItemsList = [{
     title: 'Update week 2',
     content: `During the first two weeks of 2020 we have updated the website and worked on an inital version of a logo. Furthermore, hard deadlines have been set by teh development team.
     The controls for the mobiele devices also work and have been tested thoroughly. We are currently working on some character models and making the menu's and some more in-game elements.`,
-    date: new Date(2020, 1, 1)
+    date: new Date(2020, 0, 12)
 }
 ];
