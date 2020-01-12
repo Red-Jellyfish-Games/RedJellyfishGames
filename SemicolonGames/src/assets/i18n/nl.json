@@ -3,5 +3,14 @@
     "menuContact": "Contact",
     "menuAbout": "Over",
     "menuNews": "Nieuws",
-    "companyName": "Red Jellyfish Games"
+    "companyName": "Red Jellyfish Games",
+    "Team": "Het team ",
+    "Programmers" : "Programmeurs",
+    "AboutRemco" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. For more information, visit my own <a href=\"https:\/\/www.remcovogelzang.nl\" target=\"_blank\">personal website</a>.",
+    "IntroIceRunners" : "Ice Runners is onze eerste echte vidoe game. Het is ene 2D sidescroller die zich afspeelt in een bevroren wereld. Jij moet je familie redden van een kwaadaardige tovenaar en zijn volgelingen.",
+    "ListIceRunnersHeading" : "De game bestaat uit de volgende elementen:",
+    "HandCraftedMaps": "Handgemaakte levels",
+    "Scores": "Scoreboard om jezelf te kunen vergelijken met vrienden. Wie is het beste? ",
+    "BeautifulGraphics": "Beeldschone visuals en zeer mooie audio",
+    "Release": "Zal uitgebracht worden op IOS, Android en voor op de PC"
 }
