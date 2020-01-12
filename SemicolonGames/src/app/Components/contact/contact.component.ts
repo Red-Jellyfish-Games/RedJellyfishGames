@@ -21,7 +21,7 @@ export class ContactComponent implements OnInit {
   }
 
   GetEmailString() {
-    var returnString = "mailto:semicolongames@gmail.com?";
+    var returnString = "mailto:redjellyfishgames@gmail.com?";
     var subject = this.userForm.controls.subject.value;
     var content = this.userForm.controls.content.value;
 

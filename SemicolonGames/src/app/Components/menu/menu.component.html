@@ -1,6 +1,6 @@
 <ng-container *ngFor="let menuItem of modulesList">
 
-    <ng-container *ngIf="menuItem.children.length <= 0 || !menuItem.children">
+    <ng-container *ngIf="!menuItem.children || menuItem.children.length <= 0">
         <a class="nav-link">
             <button #button mat-button [routerLink]="menuItem.routerLink" [disableRipple]="true">
                 <span class="icon fa" [ngClass]="menuItem.icon"></span>
@@ -8,7 +8,7 @@
             </button>
         </a>
     </ng-container>
-    <ng-container *ngIf="menuItem.children.length > 0">
+    <ng-container *ngIf="menuItem.children && menuItem.children.length > 0">
         <button #button mat-button [matMenuTriggerFor]="levelOne" #levelOneTrigger="matMenuTrigger"
             (mouseenter)="buttonEnter(levelOneTrigger)" (mouseleave)="buttonLeave(levelOneTrigger, button)"
             style="z-index:1050" [routerLink]="menuItem.routerLink" [disableRipple]="true">
@@ -21,7 +21,7 @@
         <mat-menu #levelOne="matMenu" direction="down" yPosition="below">
             <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTrigger, button)">
                 <ng-container *ngFor="let childL1 of menuItem.children">
-                    <li class="p-0" *ngIf="!childL1.children" mat-menu-item>
+                    <li class="p-0" *ngIf="!childL1.children || childL1.children.length <= 0" mat-menu-item>
                         <a class="nav-link" [routerLink]="menuItem.routerLink">{{childL1.label | translate}}
                             <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
                         </a>
