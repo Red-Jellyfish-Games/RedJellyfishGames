@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { CarouselItem } from '../../Interfaces/Carousel';
 
 @Component({
   selector: 'app-carousel',

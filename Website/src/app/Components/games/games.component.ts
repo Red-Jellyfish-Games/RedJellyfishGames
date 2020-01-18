@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { CarouselItem } from '../../Interfaces/Carousel';
 
 @Component({
   selector: 'app-games',
