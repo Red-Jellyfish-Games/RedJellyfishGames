@@ -12,5 +12,18 @@
     "HandCraftedMaps": "Hand crafted maps",
     "Scores": "Scoreboard to see your scores and to compare yourself with friends. Who is the best player?",
     "BeautifulGraphics": "Beautiful graphics and audio",
-    "Release": "Releases on IOS, Android and PC"
+    "Release": "Releases on iOS, Android and PC",
+    "ContactDescription": "You can contact us via email, but first answer a few questions so that we can help you setting up this email.",
+    "ContactOption1": "I have great idea",
+    "ContactOption2": "I would like to join the team",
+    "ContactOption3": "I have a question",
+    "ContactOption4": "I have found a bug/error in one of the games",
+    "ContactOption5": "Other question/request",
+    "ContactLabel1": "Where do you want to talk about?",
+    "ContactLabel2": "Explain in more detail",
+    "CreateEmail": "Create email",
+    "NotFound": "The page you are looking for could not be found :-(",
+    "SinglePlayerCampaign": "Singleplayer campaign",
+    "MultiplayerCampaign": "Multiplayer campaign",
+    "Achievements": "Achievements"
 }

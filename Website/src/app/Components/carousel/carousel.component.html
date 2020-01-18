@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>{{imageCarousel[index].title}}</mat-card-title>
+    <img mat-card-image src="{{imageCarousel[index].imageURL}}" alt="Photo of project">
+    <mat-card-content>{{imageCarousel[index].description}}</mat-card-content>
+    <mat-card-actions>
+        <button mat-icon-button aria-label="Back button" (click)="previous()">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+        <span fxFlex></span>
+        <button mat-icon-button aria-label="Play/pause button" (click)="ChangeManuallyTouched()">
+            <mat-icon>{{playPauseIcon}}</mat-icon>
+        </button>
+        <span fxFlex></span>
+        <button mat-icon-button aria-label="Next button" (click)="next()">
+            <mat-icon>arrow_forward</mat-icon>
+        </button>
+    </mat-card-actions>
+</mat-card>

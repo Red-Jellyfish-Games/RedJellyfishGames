@@ -10,13 +10,14 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { GamesComponent } from './Components/games/games.component';
 import { AboutComponent } from './Components/about/about.component';
 import { NewsComponent } from './Components/news/news.component';
-import { FlexModule } from '@angular/flex-layout';
+import { FlexModule, FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MenuComponent } from './Components/menu/menu.component';
 import { I18nModule } from './Modules/i18n/i18n.module';
 import { SelectLanguageComponent } from './Components/select-language/select-language.component';
 import { MobileMenuComponent } from './Components/mobile-menu/mobile-menu.component';
 import { CommunicationService } from './Services/communication.service';
+import { CarouselComponent } from './Components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CommunicationService } from './Services/communication.service';
     NewsComponent,
     MenuComponent,
     SelectLanguageComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,7 @@ import { CommunicationService } from './Services/communication.service';
     MaterialModule,
     BrowserAnimationsModule,
     FlexModule,
+    FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
     I18nModule
