@@ -4,7 +4,7 @@
             {{newsItem.title}}
         </mat-card-title>
         <mat-card-subtitle>
-            Posted on: {{newsItem.date | date: 'mediumDate'}}
+            {{'PostedOn' | translate}} {{newsItem.date | date: 'mediumDate'}}
         </mat-card-subtitle>
         <mat-card-content>
             {{newsItem.content}}

@@ -6,7 +6,7 @@
     "companyName": "Red Jellyfish Games",
     "Team": "The team",
     "Programmers": "Programmers",
-    "AboutRemco": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. For more information, visit my own. <a href=\"https:\/\/www.remcovogelzang.nl\" target=\"_blank\">personal website</a>.",
+    "AboutRemco": "My passion for computers started when I was young. I bought a game you'll all know: Rollercoaster Tycoon. I was sold immediately: I want to do this for myself too! I've studied GameTechnology at Utrecht University. Currently, I have a fulltime job. In my freetime I love to watch series, playing and developing software and I love to cook. For more information, visit my own ",
     "IntroIceRunners": "Ice Runners is our very first real video game. It is an 2D sidescroller set on an icy world. You need to rescue your family from the evil sorcerer and his minions.",
     "ListIceRunnersHeading": "The game will include the following:",
     "HandCraftedMaps": "Hand crafted maps",
@@ -25,5 +25,14 @@
     "NotFound": "The page you are looking for could not be found :-(",
     "SinglePlayerCampaign": "Singleplayer campaign",
     "MultiplayerCampaign": "Multiplayer campaign",
-    "Achievements": "Achievements"
+    "Achievements": "Achievements",
+    "IssueTrackerEmail": "Make sure to visit our issue tracker if you found bugs. Or send us an e-mail at the ",
+    "Page": " page",
+    "Contact": "contact",
+    "NoArtists": "We currently do not have artists but if you are interested feel free to send us a message at the ",
+    "Artists": "Artists",
+    "AboutJeroen": "I have always been really interested in computers and electronics in a general sense. Even when I was younger I used to play with systems or try and find out how they worked. Once I signed up for the University of Utrecht, I really got into coding and all that it entails. I now have a bachelors in Gametech and plan on doing a masters in security. For more information, visit my own ",
+    "TeamIntro": "We met eachother at Utrecht University. In 2019, we decided to started to start an indie game company. This game company is called Red Jellyfish games. We are excited to bring you new and fun games for both mobile and pc. If you wish to join us see the",
+    "PersonalWebsite": "personal website",
+    "PostedOn": "Posted on: "
 }

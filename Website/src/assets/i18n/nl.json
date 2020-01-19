@@ -6,7 +6,7 @@
     "companyName": "Red Jellyfish Games",
     "Team": "Het team ",
     "Programmers": "Programmeurs",
-    "AboutRemco": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. For more information, visit my own <a href=\"https:\/\/www.remcovogelzang.nl\" target=\"_blank\">personal website</a>.",
+    "AboutRemco": "Mijn passie om later 'iets met computers' te gaan doen is ontstaan door het spelen van Rollercoaster Tycoon. Toen ik wat ouder was heb ik mij verdiept in de mogelijkheden. Uiteindelijk heb ik gekozen om GameTechnologie te studeren op de Universiteit Utrecht. Inmiddels heb ik een fulltime baan. In mijn vrije tijd kijk ik graag series, speel en maak ik eigen games (verrassend ;-)) en kook ik graag. Voor meer informatie, bezoek mijn eigen ",
     "IntroIceRunners": "Ice Runners is onze eerste echte video game. Het is een 2D sidescroller die zich afspeelt in een bevroren wereld. Jij moet je familie redden van een kwaadaardige tovenaar en zijn volgelingen.",
     "ListIceRunnersHeading": "De game bestaat uit de volgende elementen:",
     "HandCraftedMaps": "Handgemaakte levels",
@@ -25,5 +25,14 @@
     "NotFound": "Deze pagina kon niet gevonden worden :-(",
     "SinglePlayerCampaign": "Singleplayer campagne",
     "MultiplayerCampaign": "Multiplayer campagne",
-    "Achievements": "Achievements"
+    "Achievements": "Achievements",
+    "IssueTrackerEmail": "Meldt bugs op onze issue tracker. Of stuur ons een email via de ",
+    "Page": " pagina",
+    "Contact": "contact",
+    "NoArtists": "Momenteel hebben we nog geen artists in ons team. Als je geïntereseerd bent, stuur ons dan een bericht via de ",
+    "Artists": "Artists",
+    "AboutJeroen": "Ik ben altijd erg geïnteresseerd geweest in computers en elektronia in het algemeen. Toen ik jong was was ik altijd al bezig met het uitzoeken hoe systemen werken. Sinds ik op de universiteit zit begon ik te coderen en alles wat daarbij komt kijken. Ik heb nu een bachelor in Gametechnologie en ik ben van plan om een master informatiebeveiliging te doen. Voor meer informatie, bezoek mijn eigen ",
+    "TeamIntro": "Wij (Jeroen en Remco) kennen elkaar van de Universiteit Utrecht. In 2019 hebben we besloten om een indie game bedrijf te starten, genaamd Red Jellyfish Games. We kunnen niet wachten om nieuwe games, content updates en meer uit te brengen voor zowel pc als mobiel. Ook zijn we erg benieuwd naar jullie ideeën en reacties op onze games. Voor meer informatie, bekijk de ",
+    "PersonalWebsite": "persoonlijke website",
+    "PostedOn": "Gepubliceerd op: "
 }
