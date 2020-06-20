@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "SemicolonGames:serve"
+            "devServerTarget": "RedJellyfishGames:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "SemicolonGames:serve:production"
+              "devServerTarget": "RedJellyfishGames:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "SemicolonGames"
+  "defaultProject": "RedJellyfishGames"
 }

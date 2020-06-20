@@ -8,8 +8,8 @@ import { CarouselItem } from '../../Interfaces/Carousel';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
-  imageCarousel: Array<CarouselItem> = [{ title: "Beautiful graphics", imageURL: "assets/icerunners/preview1.png" },
-  { title: "Beautiful graphics 2", imageURL: "assets/icerunners/preview2.png" }];
+  imageCarousel: Array<CarouselItem> = [{ title: "Beautiful graphics", imageURL: "assets/icerunners/preview1.png", description: "Test description 1" },
+  { title: "Beautiful graphics 2", imageURL: "assets/icerunners/preview2.png", description: "Test description 2" }];
   index = 0;
   manuallyTouched: BehaviorSubject<boolean>;
   playPauseIcon: string;
