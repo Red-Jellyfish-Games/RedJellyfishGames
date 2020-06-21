@@ -6,8 +6,8 @@ export const ModulesList = [{
     label: 'menuGames',
     routerLink: '/games/',
     children: [{
-        label: 'Ice Runners',
-        routerLink: '/games/',
+        label: 'Color Disco',
+        routerLink: '/games/colordisco',
         children: []
     }]
 }, {
